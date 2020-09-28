@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Failed suite [Failed suite [Suite]]]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="CrossBrowser">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="SkipTest"/>
+          <include name="FailDemo"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- CrossBrowser -->
+    </classes>
+  </test> <!-- ChromeTest(failed)(failed)(failed) -->
+  <test thread-count="2" parallel="tests" name="FireFoxTest(failed)(failed)(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="CrossBrowser">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="SkipTest"/>
+          <include name="FailDemo"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- CrossBrowser -->
+    </classes>
+  </test> <!-- FireFoxTest(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Suite]]] -->
